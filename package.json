@@ -1,0 +1,27 @@
+{
+  "name": "@k-kinzal/each",
+  "version": "0.0.0",
+  "description": "To yield each command.",
+  "main": "index.js",
+  "bin": [
+    "cli.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/k-kinzal/each.git"
+  },
+  "keywords": [
+    "npm",
+    "cli"
+  ],
+  "author": "k-kinzal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/k-kinzal/each/issues"
+  },
+  "homepage": "https://github.com/k-kinzal/each",
+  "dependencies": {
+    "cli": "^0.11.1",
+    "glob": "^6.0.1"
+  }
+}
