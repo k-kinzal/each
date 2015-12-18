@@ -1,8 +1,7 @@
-#!/usr/bin/env node
-var cli = require('cli').enable('version', 'glob', 'catchall');
-var exec = require('child_process').execSync;
+li = require('cli').enable('version', 'glob', 'catchall');
 var fs = require('fs');
 var path = require('path');
+var spawn = require('child_process').spawnSync;
 
 var packageJson = require('./package.json');
 
@@ -29,7 +28,7 @@ cli.main(function (args, options) {
     var cwd = options.cwd ? p : process.cwd();
     var command = options.yield.replace('$0', process.cwd())
                                .replace('$1', p);
-    process.stdout.write(exec(command, {cwd: cwd}).toString());
+    spawn('/bin/sh', ['-c', command], {cwd: cwd, stdio: 'inherit'});
   });
 });
 
