@@ -1,6 +1,6 @@
 {
   "name": "@k-kinzal/each",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "To yield each command.",
   "main": "index.js",
   "bin": {
