@@ -1,4 +1,5 @@
-li = require('cli').enable('version', 'glob', 'catchall');
+#!/usr/bin/env node
+var cli = require('cli').enable('version', 'glob', 'catchall');
 var fs = require('fs');
 var path = require('path');
 var spawn = require('child_process').spawnSync;
